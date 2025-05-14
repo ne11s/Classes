@@ -16,6 +16,7 @@ public class Joueur {
     }
 
     public void setNom(String nom) {
+        System.out.println(this.nom + " change de pseudo : " + nom);
         this.nom = nom;
     }
 
@@ -45,8 +46,8 @@ public class Joueur {
     public void effectuerUneQuete() {
         this.xp += 10;
         this.queteEffectuer++;
-        levelUp();
         System.out.println("Le joueur " +this.nom+" effectue la quête n° " + this.queteEffectuer);
+        levelUp();
         }
 
 }

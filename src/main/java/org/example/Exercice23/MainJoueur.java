@@ -6,7 +6,7 @@ public class MainJoueur {
         for (int i =0 ; i<20;i++) {
             joueur1.effectuerUneQuete();
         }
-
+        joueur1.setNom("LeGigaBossDuJava");
 
     }
 }
