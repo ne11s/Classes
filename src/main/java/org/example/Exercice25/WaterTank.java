@@ -1,5 +1,7 @@
 package org.example.Exercice25;
 
+import org.example.Exercice23.Joueur;
+
 public class WaterTank {
     private double poidsVide;
     private double capaciteMax;
@@ -24,15 +26,18 @@ public class WaterTank {
        totaleDesVolume = niveauRemplissage;
     }
     public void vider(double volume) {
-        if (niveauRemplissage > volume) {
+        if (niveauRemplissage >= volume) {
             niveauRemplissage-= volume;
-        } else if( niveauRemplissage<volume){
+        } else if( niveauRemplissage <volume){
             niveauRemplissage=0;
         }
         totaleDesVolume = niveauRemplissage;
     }
     public static double getTotaleDesVolume() {
         return totaleDesVolume;
+    }
+    public int getNumeroDeCiterne() {
+        return this.numeroDeCiterne;
     }
 
 }
